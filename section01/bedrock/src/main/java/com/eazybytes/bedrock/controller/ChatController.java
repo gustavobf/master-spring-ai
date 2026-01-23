@@ -1,4 +1,4 @@
-package com.eazybytes.ollama.controller;
+package com.eazybytes.bedrock.controller;
 
 import org.springframework.ai.chat.client.*;
 import org.springframework.web.bind.annotation.*;

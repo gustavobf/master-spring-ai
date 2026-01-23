@@ -1,13 +1,13 @@
-package com.eazybytes.ollama;
+package com.eazybytes.bedrock;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class OpenaiApplication {
+public class BedrockApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(OpenaiApplication.class, args);
+		SpringApplication.run(BedrockApplication.class, args);
 	}
 
 }

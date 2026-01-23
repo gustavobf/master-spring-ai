@@ -1,10 +1,10 @@
-package com.eazybytes.ollama;
+package com.eazybytes.bedrock;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class OpenaiApplicationTests {
+class BedrockApplicationTests {
 
 	@Test
 	void contextLoads() {

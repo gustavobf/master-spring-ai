@@ -19,8 +19,8 @@ public class PromptTemplateController {
     Resource userPromptTemplate;
 
     @GetMapping("/email")
-    public String chat (@RequestParam("customerName") String customerName,
-                        @RequestParam("customerMessage") String customerMessage) {
+    public String email (@RequestParam("customerName") String customerName,
+                         @RequestParam("customerMessage") String customerMessage) {
         return chatClient.prompt().system("""
                 You are a professional customer service assistant which helps drafting email
                 responses to improve the productivity of the customer support team

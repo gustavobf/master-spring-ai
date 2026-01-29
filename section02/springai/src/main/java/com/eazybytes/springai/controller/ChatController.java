@@ -1,5 +1,6 @@
 package com.eazybytes.springai.controller;
 
+import com.eazybytes.springai.advisors.*;
 import org.springframework.ai.chat.client.*;
 import org.springframework.web.bind.annotation.*;
 
@@ -15,6 +16,8 @@ public class ChatController {
 
     @GetMapping("/chat")
     public String chat (@RequestParam("message") String message) {
-        return chatClient.prompt().user(message).call().content();
+        return chatClient.prompt()
+                //                .advisors(new TokenUsageAuditAdvisor())
+                .user(message).call().content();
     }
 }

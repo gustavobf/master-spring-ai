@@ -8,7 +8,7 @@ import org.springframework.ai.document.Document;
 import java.util.*;
 import java.util.stream.*;
 
-@Component
+//@Component
 public class RandomDataLoader {
 
     private final VectorStore vectorStore;

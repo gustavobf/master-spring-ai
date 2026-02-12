@@ -1,6 +1,7 @@
 package com.eazybytes.springai.config;
 
 import com.eazybytes.springai.advisors.*;
+import com.eazybytes.springai.rag.*;
 import org.springframework.ai.chat.client.*;
 import org.springframework.ai.chat.client.advisor.*;
 import org.springframework.ai.chat.client.advisor.api.*;
@@ -44,6 +45,7 @@ public class ChatMemoryChatClientConfig {
                         .targetLanguage("english").build())
                 .documentRetriever(VectorStoreDocumentRetriever.builder().vectorStore(vectorStore)
                         .topK(3).similarityThreshold(0.5).build())
+                .documentPostProcessors(PIIMaskingDocumentPostProcessor.builder())
                 .build();
     }
 
